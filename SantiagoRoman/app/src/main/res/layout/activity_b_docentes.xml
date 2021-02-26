@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ActivityBDocentes">
+
+    <EditText
+        android:id="@+id/txtCedulaBD"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Cedula" />
+
+    <EditText
+        android:id="@+id/txtApellidosBD"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Apellidos" />
+
+    <EditText
+        android:id="@+id/txtNombresBD"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Nombres" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnGuardarBD"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text=" + " />
+
+        <Button
+            android:id="@+id/btnModificarBD"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text=" ++ " />
+
+        <Button
+            android:id="@+id/btnEliminarUnoBD"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text=" - " />
+
+        <Button
+            android:id="@+id/btnEliminarTodosBD"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text=" -- " />
+
+        <Button
+            android:id="@+id/btnBuscarUnoBD"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text=" BC " />
+
+        <Button
+            android:id="@+id/btnBuscarTodosBD"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="BT" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/lblInfoBD"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Aquí se mostrarán los datos de la BD" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerDocente"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>

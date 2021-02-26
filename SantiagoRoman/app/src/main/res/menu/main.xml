@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:title="Actividades">
+        <menu>
+            <item android:title="Parámetros"/>
+            <item android:id="@+id/opcionLogin" android:title="Login"/>
+        </menu>
+    </item>
+    <item android:title="Sensores">
+        <menu>
+            <item android:title="Acelerometro"/>
+            <item android:title="Proximididad"/>
+            <item android:id="@+id/opcionFragmentos" android:title="Fragmentos"/>
+            <item android:id="@+id/opcionDialogos" android:title="Dialogos"/>
+        </menu>
+    </item>
+</menu>

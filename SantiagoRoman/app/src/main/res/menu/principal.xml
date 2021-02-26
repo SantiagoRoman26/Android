@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        android:title="@string/action_settings"
+        app:showAsAction="never" />
+    <item android:title="Base de Datos">
+        <menu>
+            <item android:id="@+id/opcionAcademia" android:title="Academia"/>
+        </menu>
+    </item>
+    <item android:title="Servicio Web">
+        <menu>
+            <item android:id="@+id/opcionAlumnoWS" android:title="AlumnoWS"/>
+        </menu>
+    </item>
+    <item android:title="Archivos">
+        <menu>
+            <item android:id="@+id/opcionMemoriaInterna" android:title="MemoriaInterna"/>
+            <item android:id="@+id/opcionMemoriaPorgrama" android:title="MemoriaPrograma"/>
+            <item android:id="@+id/opcionMemoriaExterna" android:title="MemoriaExterna"/>
+        </menu>
+    </item>
+    <item android:title="Actividades">
+        <menu>
+            <item android:title="Parámetros"/>
+            <item android:id="@+id/opcionLogin" android:title="Login"/>
+        </menu>
+    </item>
+    <item android:title="Sensores">
+        <menu>
+            <item android:title="Acelerometro"/>
+            <item android:title="Proximididad"/>
+            <item android:id="@+id/opcionFragmentos" android:title="Fragmentos"/>
+            <item android:id="@+id/opcionDialogos" android:title="Dialogos"/>
+        </menu>
+    </item>
+</menu>
